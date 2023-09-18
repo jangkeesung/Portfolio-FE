@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Kee</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <style>
+    
+    </style>
+    <script src="js/cookie.js"></script>
+    <script src="js/theme.js"></script>
+
+</head>
+<body>
+    <nav id="top">
+        <div id="kee"><span>Developer Kee</span></div>
+        <div id="ptitle"><span>JSP/Servlet Project</span></div>
+        <span id="theme">
+            <span class="material-symbols-outlined themeicon">
+            </span>
+        </span>
+    </nav>
+
+    
+    <header>
+        <img src="images/jsmain.png" alt="대표사진" class="oimg">
+    </header>
+    <hr>
+    <section>
+        <article id="about-project">
+            <h2 class="subtitle">
+            <span class="material-symbols-outlined">description</span>
+                About Project
+            </h2>
+            <p>주제 : 동물과 사람들이 어울리는 공간을 만들어주는 펫 관련 플랫폼 개발</p>
+            <div id="env">
+                <span>개발 환경 :</span>
+                <table>
+                    <tr>
+                        <td>Platform</td>
+                        <td>Windows 10  Intel(R) i5-8250 CPU, 8GB, x64</td>
+                    </tr>
+                    <tr>
+                        <td>Language(version)</td>
+                        <td>JAVA(JDK 11.0.2), SQL, HTML5, CSS, JavaScript, JSP</td>
+                    </tr>
+                    <tr>
+                        <td>IDE</td>
+                        <td>Eclipse 4.19.0 (2021-03), VSCode, SQL Developer</td>
+                    </tr>
+                    <tr>
+                        <td>Used Skills</td>
+                        <td>JDBC, jQuery, Bootstrap, Servlet, Ajax</td>
+                    </tr>
+                    <tr>
+                        <td>WAS</td>
+                        <td>Apache tomcat-8.5.87</td>
+                    </tr>
+                    <tr>
+                        <td>Database</td>
+                        <td>Oracle, SQL-Server, PL-SQL</td>
+                    </tr>
+                </table>
+            </div>
+
+            <p>개발 기간 : 2023.05.24 ~ 2023.06.12</p>
+            <p>목적 : 반려동물 관련 서비스에 대한 수요가 높아짐에 따라 이를 충족시키기 위한 다양한 기능을 통합한 플랫폼을 개발</p>
+            <p>개요 : </p>
+            <ul>
+                <li>기존 범용 시스템의 한계 개선</li>
+                - 여러 사이트에 갈 필요 없이 한 사이트에서 다양한 서비스를 이용할 수 있는 기능 제공	
+                <li>현행 플랫폼의 신뢰성 부족 개선</li>
+                - 데이터의 정확성과 최신성을 보장하는 기능 제공
+                <li>1인 가구 증가로 인한 반려동물 케어 시간 부족 개선</li>
+                - 비용 부담을 줄이고 신뢰할 수 있는 펫시터를 찾을 수 있는 기능 제공
+                <li>반려인들의 소통의 어려움 개선</li>
+                - 사용자들이 활발한 소통을 할 수 있게 하는 기능 제공
+                    
+            </ul>
+            <p>구현 기능 :</p>
+            <ul>      
+                <li>로그인, 회원가입, 소셜로그인(카카오)</li>
+                <li>병원/약국 관련 정보 조회</li>
+                - 카카오맵 API를 활용한 동물병원/동물약국 선택 후 위치 및 정보 조회 기능<br>
+                - 특정 병원 또는 약국 선택 후 리뷰 작성 및 조회 기능<br>
+                - 지적편집도·지형정보·교통정보·자전거도로 정보 조회 기능<br>
+                <li>유기동물 입양 공고 확인</li>
+                - 유기동물 입양 공고 조회<br>
+                - 서울특별시 공공데이터(서울동물복지지원센터 입양 대기동물 현황)를 활용하여 입양 대기 중인 유기동물 공고 조회 기능<br>
+                <li>실종 동물 찾기</li>
+                - 카카오맵 API를 활용한 반려동물이 실종된 장소 표시 기능<br>
+                - 댓글 작성 시 지도의 발견 위치 선택 기능<br>
+                - 마커 클릭 시 댓글 작성자, 날짜, 댓글 내용 조회 기능<br>
+                <li>커뮤니티 - 산책 친구 구하기</li>
+                - 게시글 작성·조회·수정·삭제, 채팅하기<br>
+                - 카카오맵 API를 활용한 산책 경로 지정 기능<br>
+                - 지도의 마커에 마우스를 올릴 시 커스텀 오버레이 조회 기능<br>
+                - 지도의 마커를 클릭할 때 modal창으로 게시글을 조회하는 기능<br>
+                <li>커뮤니티 - 와글와글</li>
+                - 게시글 작성·조회·수정·삭제<br>
+                - 특정 말머리를 선택하여 해당하는 게시글을 조회 및 검색하는 필터 기능<br>
+                - 게시글을 작성, 조회, 수정, 삭제하는 기능(본문 은 CKEditor 활용)<br>
+                <li>커뮤니티 - 수의사 Q&A</li>
+                - 게시글 작성·조회·수정·삭제<br>
+                - 답글 내 댓글<br>
+                - 특정 말머리를 선택하여 해당하는 게시글을 조회 및 검색하는 필터 기능<br>
+                - 게시글 작성, 조회, 수정, 삭제 기능(본문은 CKEditor 활용)<br>
+                - 게시글 내 수의사 답변 작성, 조회 기능<br>
+                - 답변 내 댓글 작성, 조회 기능<br>
+                <li>펫시터 매칭</li>
+                - 게시글 작성·조회·수정·삭제, 채팅하기<br>
+                - 펫시터 모집·신청하기<br>
+                - 게시글 작성, 조회, 수정, 삭제 기능(본문은 CKEditor 활용)<br>
+                - 펫시터 인증 회원의 경우 게시글을 조회하여 신청할 수 있는 기능<br>
+                - 작성자는 신청자 프로필 조회 및 채팅을 통하여 결정 후 맡길 수 있는 기능<br>
+                <li>고객센터</li>
+                - 고객 문의 작성 기능<br>
+                - 질문 카테고리 선택 후 문의 기능<br>
+                - 마이페이지에서 문의 답변 확인 기능<br>
+                <li>관리기능</li>
+                - 문의 처리 현황 조회<br>
+                - 일자별 문의 현황 조회<br>
+                - 문의 답변 작성<br>
+                - 대시보드를 통해 문의 현황과 그래프로 조회하는 기능<br>
+                - 문의 현황 일자별 및 최근 10개 문의 조회 기능<br>
+                - 관리자가 문의 내용 확인 후 답변 작성 기능<br>
+                <li>회원 인증 기능</li>
+                - 동물등록 인증<br>
+                - 펫시터 인증<br>
+                - 수의사 인증<br>
+                - 인증하기를 누르면 modal창을 통해 동물 등록 번호를 입력하여 인증<br>
+                - 펫시터는 주민등록번호를 입력하여 인증<br>
+                - 수의사는 수의사 번호를 입력하여 인증<br>
+                - 인증 여부에 따라 사용가능한 서비스 제한<br>
+                <li>마이페이지 - 공통</li>
+                - 개인정보 조회<br>
+                - 개인정보 수정<br>
+                - 활동내역 조회<br>
+                - 펫시터 신청내역 조회<br>
+                - 개인정보 조회 기능<br>
+                - 개인정보 수정 기능<br>
+                - 활동내역 조회 기능<br>
+                - 펫시터 신청내역 조회 기능<br>
+                <li>마이페이지 - 펫시터</li>
+                - 펫시터 프로필 조회<br>
+                - 펫시터 프로필 수정<br>
+                - 펫시터 신청 내역 조회<br>
+                - 펫시터 프로필 정보 조회 기능<br>
+                - 펫시터 프로필 정보 수정 기능<br>
+                - 자신의 펫시터 신청 내역 조회 기능<br>
+                <li>마이페이지 - 수의사</li>
+                - 수의사 프로필 조회<br>
+                - 수의사 프로필 수정<br>
+                - 답변 내역 조회<br>
+                - 수의사 프로필 정보 조회 기능<br>
+                - 수의사 프로필 정보 수정 기능<br>
+                - 경력사항 추가 기능<br>
+                - 자신의 답변 내역 조회 기능<br>
+            </ul>
+        </article>
+        <hr>
+        <article id="history">
+            <h2 class="subtitle">
+                <span class="material-symbols-outlined">update</span>
+                History
+            </h2>
+            <ul>
+                <li>요구사항 분석</li>
+                <img src="images/js요구분석.jpg" alt="요구분석 사진">
+                <li>화면 설계 : Figma </li>
+                <img src="images/js화면설계.jpg" alt="화면설계 사진">
+                <li>데이터모델(ERD) 설계</li>
+                <img src="images/jserd논리.png" alt="erd 사진">
+                <li>화면 캡처 </li>
+                <img src="images/js화면캡처.jpg" alt="화면캡처 사진">
+            </ul>
+        </article>
+        <hr>
+        <article id="content">
+            <h2 class="subtitle">
+                <span class="material-symbols-outlined">content_paste</span>
+                Content
+            </h2>
+            <img src="images/jscontent.jpg" alt="구현기능 사진" class="contentimage">
+        </article>
+        <hr>
+        <article id="review">
+            <h2 class="subtitle">
+                <span class="material-symbols-outlined">rate_review</span>
+                Review
+            </h2>
+            <div class="review-box">
+                <p>웹을 배우고나서 첫 프로젝트로 프론트엔드 페이지 제작과 서버로의 데이터 전송 및 호출을 구현해보았다.</p>
+                <p>게시판 CRUD 기능과 검색 및 페이징 기능을 기본적으로 구현하였으며, 회원가입 및 로그인 또한 구현해볼 수 있었다.</p>
+                <p>게시판의 글 내용은 CKEditor Library를 이용하여 약간의 글 꾸미기 및 이미지 삽입 처리까지 하였다.</p>
+                <p>'회원가입 및 정보 수정' 시 주소 검색 API를, '병원/약국 찾기 및 산책친구'에서 카카오맵 API를, '당신을 기다려요'에서 유기동물 입양 정보 API를 적극 활용하여 외부 API 기능 사용법을 잘 익힐 수 있었다.</p>
+                <p>JSP 페이지에서 필요한 데이터를 Servlet과의 연동을 통해 호출 또는 전송하여 JDBC로 데이터베이스에 접근, 데이터를 조작하고 select한 데이터를 다시 JSP 페이지에서 jstl과 el로 출력하는 훈련을 할 수 있었다.</p>
+                <p>자바, 오라클, 웹까지 배운 모든 것을 활용하여 실제 사이트처럼 구현해보니 우리가 이용하는 사이트들이 얼마나 많은 정보 처리가 이루어지고 있었는지 알 수 있었다.</p>
+            </div>
+        </article>
+        <div id="back"><a href="index.html">Go Back</a></div>
+    </section>
+    <hr>
+    <footer>
+		&copy;Copyright Jang Kee Sung. All Rights reserved. <span style="float:right">davekee@naver.com</span>
+	</footer>
+    <div id="home"><span class="material-symbols-outlined">home</span></div>
+    <div id="up"><span class="material-symbols-outlined">arrow_upward</span></div>
+
+    <script src="js/jquery-3.6.4.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>
