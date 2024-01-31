@@ -86,14 +86,15 @@
 			<div class="skillbox">
 				<ul>
 					<li>Java (JDK11)</li>
-					<li>Oracle Database</li>
+					<li>Oracle / MySQL</li>
 					<li>HTML5 / CSS3 / JavaScript (ES6+)</li>
-					<li>Servlet / JSP</li>
-					<li>Spring Framework</li>
-					<li>개발 환경 : Eclipse / Visual Studio Code / SQL Developer</li>
-					<li>버전 관리 : Git / GitHub</li>
+					<li>Vue.js</li>
+					<li>Servlet / JSP / MyBatis</li>
+					<li>Spring / Spring Boot</li>
+					<li>개발 환경 : Eclipse / VS Code / DBeaver</li>
+					<li>형상 관리 : Git / GitHub</li>
 				</ul>
-				<img src="images/로고모음.png" alt="로고모음" class="logo">
+				<img src="images/로고모음2.png" alt="로고모음" class="logo">
 			</div>
 		</article>
 		<hr>
@@ -118,23 +119,8 @@
 				Career
 			</h2>
 			<div style="padding-left: 35px;">
-				<!-- <pre id="code">
-					<code class="language-java">
-	java.lang.NullPointerException:
-
-	public class Solution {
-		public void solution(Company you, Developer me) {
-			try {
-				you.search(me.getCareer());
-			} catch (NullPointerException e) {
-				you.hire(me);
-			}
-		}
-	} 
-					</code>
-				</pre> -->
-				<p>
-					<br> <span style="color: red;">java.lang.NullPointerException</span><br>
+				(주)티에이나인 (2023.07 ~)
+					<!-- <br> <span style="color: red;">java.lang.NullPointerException</span><br>
 					<br> <span style="color: #CC6C1D">public class</span> <span
 						style="color: #1290C3;">Solution</span> {<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #CC6C1D">public
@@ -154,8 +140,8 @@
 						style="color: #79ABFF;">you</span>.<span style="color: #96EC3D;">hire</span>(<span
 						style="color: #79ABFF;">me</span>);<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;}<br> }
-				</p>
+					&nbsp;&nbsp;&nbsp;&nbsp;}<br> } -->
+
 			</div>
 		</article>
 		<hr>
@@ -307,14 +293,14 @@
 				//유저 메시지 누적
 				userMessages.push(user);
 
-				var url = 'aws-lambda-url';
+				var url = 'https://p7nwb47wcpzorztbpuokb3gdlm0hhybq.lambda-url.ap-northeast-2.on.aws/chat';
 				
 				const response = await
 				fetch(url, {	
 					method : "POST",
 					headers : {
 						"Content-Type" : "application/json",
-						"origin": "https://developer-kee.pages.dev"
+						"origin": "https://jangkeesung.github.io/portfolio/"
 					},
 					body : JSON.stringify({
 						userMessages: userMessages,
@@ -333,10 +319,10 @@
 
 			} catch (error) {
 
-				alert('현재 gpt api 기능을 서비스하지 않고 있습니다.');
-				// console.error(error);
-				// alert('요청이 유효하지 않습니다. 페이지를 새로고침합니다.\r\n' + error);
-				// location.href="index.html";
+				// alert('현재 gpt api 기능을 서비스하지 않고 있습니다.');
+				console.error(error);
+				alert('요청이 유효하지 않습니다. 페이지를 새로고침합니다.\r\n' + error);
+				location.href="index.html";
 			}
 		}
 	</script>

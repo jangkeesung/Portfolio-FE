@@ -276,6 +276,11 @@ header div {
 	line-height: 30px;
 }
 
+#Career {
+    font-size: 1.1rem;
+	line-height: 30px;   
+}
+
 #plist h3 {
     font-size: 1.2rem;
     text-align: center;
